@@ -1,6 +1,7 @@
 package org.overlake.mat803.helloworld;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ class Listener implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Toast.makeText(context, "Button Clicked", Toast.LENGTH_SHORT).show();
+        Log.d("Listener","onClick method called");
+        Toast.makeText(context, "Button Clicked from Listener object", Toast.LENGTH_SHORT).show();
     }
 }
